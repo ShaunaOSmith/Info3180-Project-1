@@ -1,3 +1,92 @@
-body {
+body 
+{
     padding-top: 5rem;
+    background-color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px; /* Adjust the top margin as needed */
+}
+
+.container2 {
+    margin-top: 50px;
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto; /* Adjust the top margin as needed */
+}
+
+.foot
+{
+    text-align: center;
+}
+
+.tertiary-row 
+{
+    display: flex;
+}
+
+.tertiary-row .form-group 
+{
+    flex: 1;
+    margin-right: 10px; /* Adjust as needed */
+}
+
+.secondary .form-group,
+.tertiary .form-group 
+{
+    width: 50%;
+    float: left;
+}
+
+.form-group-loc
+{
+    width: 49.2%;
+}
+
+.form-group-img
+{
+    width: fit-content;
+}
+
+
+/* Displaying the images side by side in grid format so it is easier to read by user  */
+
+.grid-container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 40px;
+}
+
+.grid-item 
+{
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.grid-item img 
+{
+    display: block;
+    max-width: 100%;
+    height: 500px;
+}
+
+
+.ps-price 
+{
+    border: 1px solid #ccc; /* Add a border around the price */
+    padding: 5px; /* Add some padding to make it look better */
+    border-radius: 5px; /* Add rounded corners to the border */
+    display: inline-block; /* Ensure the border wraps around the content */
+    max-width: 100px; /* Set a maximum width for the price label */
+    overflow: hidden; /* Hide any content that overflows the maximum width */
+    text-overflow: ellipsis; /* Show an ellipsis (...) for text that overflows */
+    white-space: nowrap; /* Prevent text from wrapping */
+    background-color: aliceblue;
 }
