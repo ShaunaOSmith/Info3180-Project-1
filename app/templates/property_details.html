@@ -5,13 +5,11 @@
 
     {% include 'flash_messages.html' %}
 
-    <div class="property">
+    <div class="card-property">
+        <div class="property-img">
+            <img src="{{ url_for('get_image', filename=property.pname) }}">
+        </div>
 
-        <img src="{{ url_for('get_image', filename=property.pname) }}">
-
-        <br>
-        <br>
-    
         <div class="property-info">
             <h3 class = "prop-title">{{ property.title }}</h3>
     
@@ -26,18 +24,24 @@
             
             <div class="rooms">
                 <div class="bedrooms">
-                    <i class="fa-solid fa-bed"></i>
-                    <p>{{ property.num_rooms}} Bedrooms</p>
+                    <p>
+                        <i class="fas fa-bed"></i>
+                        {{ property.num_rooms }} Bedrooms
+                    </p>
                 </div>
                 <div class="bathrooms">
-                    <i class="fa-solid fa-bath"></i>
-                    <p>{{ property.num_brooms}} Bathrooms</p>
+                    <p>
+                        <i class="fas fa-bath"></i>
+                        {{ property.num_brooms }} Bathrooms
+                    </p>
                 </div>
             </div>
     
-            <div class="location">
-                <i class="fa-solid fa-location-dot"></i>
-                <p>{{ property.location }}</p>
+            <div class="plocation">
+                <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    {{property.location}}
+                </p>
             </div>
     
             <button class="btn btn-primary" >Email Realtor</button>

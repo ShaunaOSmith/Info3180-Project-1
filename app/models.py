@@ -8,13 +8,13 @@ class Propertymod(db.Model):
     __tablename__ = 'properties'
 
     id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(100),  unique=True)
-    description = db.Column(db.String(255))
+    title = db.Column(db.String(255),  unique=True)
+    description = db.Column(db.String(512))
     num_rooms = db.Column(db.Integer)
     num_brooms = db.Column(db.Integer)
     price = db.Column(db.String(255))
     ptype =  db.Column(db.String(255))
-    location = db.Column(db.String(255))
+    location = db.Column(db.String(512))
     pname = db.Column(db.String(255))
 
 
@@ -24,7 +24,7 @@ class Propertymod(db.Model):
         self.num_rooms = nroom
         self.num_brooms = nbroom
         self.price = precio
-        self.tpype = tipo
+        self.ptype = tipo
         self.location = local
         self.pname = pnombre    
     

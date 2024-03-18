@@ -4,9 +4,9 @@ body
     background-color: aliceblue;
 }
 
-h1 {
+h2 {
     text-align: center;
-    margin-top: 50px; /* Adjust the top margin as needed */
+    margin-top: 50px; 
 }
 
 .container2 {
@@ -16,9 +16,9 @@ h1 {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 50px auto; /* Adjust the top margin as needed */
+    margin: 50px auto; 
 }
-
+/*Property_listing style*/
 .foot
 {
     text-align: center;
@@ -32,7 +32,7 @@ h1 {
 .tertiary-row .form-group 
 {
     flex: 1;
-    margin-right: 10px; /* Adjust as needed */
+    margin-right: 10px; 
 }
 
 .secondary .form-group,
@@ -52,8 +52,16 @@ h1 {
     width: fit-content;
 }
 
+.title {
+    font-size: 18px; 
+    color: #333; 
+    margin-bottom: 15px; 
+}
 
-/* Displaying the images side by side in grid format so it is easier to read by user  */
+.location{
+    color: grey;
+}
+
 
 .grid-container
 {
@@ -64,29 +72,139 @@ h1 {
 
 .grid-item 
 {
-    padding: 10px;
+    padding: none;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
     overflow: hidden;
 }
 
 .grid-item img 
 {
     display: block;
-    max-width: 100%;
-    height: 500px;
+    width: 100%;
+    margin: 0;
 }
 
 
 .ps-price 
 {
-    border: 1px solid #ccc; /* Add a border around the price */
-    padding: 5px; /* Add some padding to make it look better */
-    border-radius: 5px; /* Add rounded corners to the border */
-    display: inline-block; /* Ensure the border wraps around the content */
-    max-width: 100px; /* Set a maximum width for the price label */
-    overflow: hidden; /* Hide any content that overflows the maximum width */
-    text-overflow: ellipsis; /* Show an ellipsis (...) for text that overflows */
-    white-space: nowrap; /* Prevent text from wrapping */
-    background-color: aliceblue;
+    border: 1px solid #ccc; 
+    padding: 5px 15px; 
+    border-radius: 20px; 
+    display: inline-block; 
+    max-width: 150px; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    background-color:rgb(148, 205, 238);
+    color: white;
+    text-align: center;
+}
+
+
+.btn {
+    background-color: rgb(69, 179, 159);
+    border-radius: 0; 
+    color: white;
+    padding: 8px 20px; 
+    text-decoration: none; 
+}
+
+.btn:hover {
+    background-color: rgb(2, 68, 58); 
+}
+
+/*Property_detail style*/
+
+.card-property {
+    display: flex; 
+    border: 1px solid #dee2e6; 
+    border-radius: 8px; 
+    overflow: hidden;
+    margin-bottom: 20px; 
+    background-color: white;
+    font-style: sans-serif;;
+}
+
+.property-img {
+    flex: 0 0 40%; 
+    overflow: hidden; 
+   
+}
+
+.property-img img {
+    width: 100%; 
+    height: 100%; 
+    object-position: left;
+}
+
+.property-info {
+    flex: 1; 
+    padding: 20px;
+}
+
+.prop-title {
+    font-size: 1.5rem; 
+    margin-bottom: 10px; 
+}
+
+.price-type {
+    display: flex;
+    margin-bottom: 10px; 
+}
+
+.price-type p{
+   margin: 0;
+}
+
+.price-type .price{
+    margin-right: 10px;
+    border: 1px solid #ccc; 
+    padding: 5px 15px; 
+    border-radius: 20px; 
+    display: inline-block; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    background-color:rgb(148, 205, 238);
+    color: white;
+    text-align: center;
+}
+
+.price-type .type{
+    border: 1px solid #ccc; 
+    padding: 5px 15px; 
+    border-radius: 20px; 
+    display: inline-block; 
+    max-width: 150px; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    background-color:rgb(240, 168, 80);
+    color: white;
+    text-align: center;
+}
+
+
+
+.rooms {
+    display: flex;
+    margin-bottom: 10px; 
+}
+
+.bedrooms,
+.bathrooms {
+    flex: 1; 
+    display: flex;
+    align-items: center; 
+}
+
+.bedrooms p,
+.bathrooms p {
+    margin: 0;
+}
+
+.plocation {
+    margin-bottom: 10px; 
+}
+
+.btn-primary {
+    background-color: green;
+    border-radius: 0;
 }
