@@ -18,7 +18,7 @@ h2 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 50px auto; 
 }
-/*Property_listing style*/
+/*Property_listing.html style*/
 .foot
 {
     text-align: center;
@@ -112,7 +112,7 @@ h2 {
     background-color: rgb(2, 68, 58); 
 }
 
-/*Property_detail style*/
+/*Property_detail.html style*/
 
 .card-property {
     display: flex; 
